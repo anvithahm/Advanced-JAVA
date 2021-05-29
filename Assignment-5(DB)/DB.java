@@ -1,6 +1,6 @@
 import java.sql.*;
 import java.io.*;
-public class Db
+public class DB
 {
 	public static void main(String []args)
 	{
