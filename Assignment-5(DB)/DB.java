@@ -9,11 +9,11 @@ public class DB
 			Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 			Connection c=DriverManager.getConnection("jdbc:ucanaccess://F//Eclipse//Test//A1.accdb");
 			Statement s=c.createStatement();
-			System.out.println("Connection established")'
+			System.out.println("Connection established");
 			s.execute("create table Mark(USN varchar,Mark1 number,Mark2 number)");
 			System.out.println("Table created");
-			s.executeUpdate("insert into Mark values '4al18cs022',99,100);
-			s.executeUpdate("insert into Mark values '4al18cs021',100,99);
+			s.executeUpdate("insert into Mark values '4al18cs010',100,100);
+			s.executeUpdate("insert into Mark values '4al18cs011',50,50);
 			System.out.println("Inserted");
 			ResultSet r=s.executeQuery("select from Marks");
 			System.out.println("The records in the table are:");
